@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\chloe\Documents\Code\Hackaton\Referencing_Manager_System\App.xaml
-11407045341
+31065194844
 
-51958615887
+7-1874597109
 194618410957
-MainWindow.xaml;
+LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
 
 True
 

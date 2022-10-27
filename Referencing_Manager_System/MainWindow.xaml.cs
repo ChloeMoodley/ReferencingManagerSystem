@@ -27,16 +27,16 @@ namespace Referencing_Manager_System
 
         private void begin_Click(object sender, RoutedEventArgs e)
         {
-/*            LoginPage LP = new LoginPage();
+            LoginPage LP = new LoginPage();
             this.Close();
-            LP.Show();*/
+            LP.Show();
         }
 
         private void register_Click(object sender, RoutedEventArgs e)
         {
-            /*RegisterPage RP = new RegisterPage();
+            RegisterPage RP = new RegisterPage();
             this.Close();
-            RP.Show();*/
+            RP.Show();
         }
     }
 }

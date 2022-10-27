@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Referencing_Manager_System"
         mc:Ignorable="d"
-                Title="MainWindow" Height="749" Width="1853" Background="#090446" ResizeMode="NoResize" WindowState="Maximized"
-        xmlns:gif ="https://github.com/XamlAnimatedGif/XamlAnimatedGif">
+        Title="MainWindow" Height="749" Width="1853" Background="#090446" ResizeMode="NoResize" WindowState="Maximized">
     <Grid>
 
         <Grid.ColumnDefinitions>

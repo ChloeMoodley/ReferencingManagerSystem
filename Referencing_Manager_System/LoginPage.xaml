@@ -1,0 +1,146 @@
+﻿<Window x:Class="Referencing_Manager_System.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Referencing_Manager_System"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="749" Width="1853" Background="#090446" ResizeMode="NoResize" WindowState="Maximized">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="https://64.media.tumblr.com/c5864cf4d2d5c95b466b6bd351c78eb0/tumblr_ot9sm2FtYi1vc76nvo1_640.jpg"
+               Grid.ColumnSpan="2"
+               Grid.RowSpan="2"
+               Width="1600"
+               Height="2200">
+        </Image>
+
+        <TextBlock Text="Reference Manager System"
+                   Grid.RowSpan="1"
+                   Grid.ColumnSpan="2"
+                   Foreground="LightBlue" 
+                   FontFamily="Arial" 
+                   Margin="0 40 0 0"
+                   FontSize="35"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   TextDecorations="Underline"
+                   ></TextBlock>
+
+        <Rectangle Grid.RowSpan="2"
+                   Grid.ColumnSpan="2"
+                   Margin="0 50 0 0"
+                   Width="600"
+                   Height="600"
+                   Fill="CadetBlue"
+>
+            <Rectangle.Style>
+                <Style TargetType="Rectangle">
+                    <Setter Property="Fill" Value="#e0bfb4"></Setter>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetProperty="Fill.Color" To="#090446" Duration="0:0:5" AutoReverse="True" RepeatBehavior="Forever"></ColorAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Rectangle.Style>
+        </Rectangle>
+
+
+        <StackPanel Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    x:Name="logVis">
+
+            <TextBlock Grid.RowSpan="2"
+                   Grid.ColumnSpan="2"
+                   Text="Please Fill Out Login Information:"
+                   FontSize="25"
+                   TextAlignment="Center"
+                   Margin="0 40 0 0"
+                   FontWeight="Bold"
+                   Foreground="WhiteSmoke"
+                   FontStyle="Normal"
+                   TextDecorations="Underline"
+                   HorizontalAlignment="Center">
+            </TextBlock>
+
+            <TextBlock x:Name="userName"
+                   Grid.Column="0"
+                   HorizontalAlignment="Center"
+                   Text="Please Enter your Username"
+                   Margin="0 80 0 0"
+                   FontFamily="Arial"
+                   FontSize="20"
+                   Foreground="WhiteSmoke">
+            </TextBlock>
+
+            <TextBox x:Name="nameUser"
+                     Margin="0 30 0 0"
+                     Width="500"
+                     Height="30"
+                     BorderBrush="#090446"
+                     BorderThickness="2"
+                     FontSize="15">
+            </TextBox>
+
+            <TextBlock x:Name="password"
+                   Grid.Column="0"
+                   HorizontalAlignment="Center"
+                   Text="Please Enter your Password"
+                   Margin="0 70 0 0"
+                   FontFamily="Arial"
+                   FontSize="20"
+                   Foreground="WhiteSmoke">
+            </TextBlock>
+
+            <PasswordBox x:Name="passWord"
+                     Margin="0 30 0 0"
+                     Width="500"
+                     Height="30"
+                     BorderBrush="#090446"
+                     BorderThickness="2">
+
+            </PasswordBox>
+
+            <Button Content="NEXT"
+                x:Name="next"
+                Height="50"
+                Width="150" 
+                Background="#090446"
+                BorderBrush="WhiteSmoke"
+                BorderThickness="2"
+                FontSize="30"
+                Foreground="WhiteSmoke"
+                Margin="0 80 0 0"
+                HorizontalAlignment="Center"
+                Click="next_Click">
+            </Button>
+
+        </StackPanel>
+
+        <Label Content="Copyright. 2021. All Rights Reserved."
+               Foreground="LightBlue"
+               FontSize="15"
+               FontFamily="Arial"
+               Grid.RowSpan="3"
+               Grid.ColumnSpan="2"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Center">
+        </Label>
+
+    </Grid>
+</Window>
